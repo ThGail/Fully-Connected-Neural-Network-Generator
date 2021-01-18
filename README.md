@@ -1,2 +1,16 @@
 # Fully-Connected-Neural-Network-Generator
-Python class that help to manage Fully Connected Neural Networks
+Python class that helps to manage Fully Connected Neural Networks
+
+Welcome to my Fully-Connected-Neural-Network-Generator !
+I created it to improve my coding skills and increase my networks understanding in a program environment.
+This program contains a class with a few tools to manage your network. The details are in the program's sheet.
+A few explainations are also in the in the program, follow the #. 
+
+I will try to update the program, two importants things are missing : 
+  - the network does not use biases
+  - there is only the sigmoide as an activation function
+
+Feel free to use it. Tell me in what crazy project you are going to use it ! 
+Bye !
+
+
