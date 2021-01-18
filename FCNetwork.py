@@ -83,7 +83,7 @@ class Complete_Network :
 #========================================================================#
 #                            TEST PART
 #========================================================================#
-''' The rules : 
+''' For the example, let's suppose the following rules :
         - the input is five dimensions vector, each coefficient is in {0,1}
         - the output is 1 if the two first coef are 1, else the output is 0 
 '''
