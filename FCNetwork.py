@@ -109,13 +109,13 @@ TestSet = np.array([    [1,0,1,1,1],
 
 
 #=========== First try =========#
-myNetwork1 = Complete_Network([5,10,1])           #5 is the vector dimension, 1 is the output dimension, 10 is an arbitraty value : nb of neurons in the hidden layer
+myNetwork1 = Complete_Network([5,10,1])           # 5 is the vector dimension, 1 is the output dimension, 10 is an arbitraty value : nb of neurons in the hidden layer
 myNetwork1.training(10000, trainingSet, outputSet)
 print("Network prediction 1 :")
 print(myNetwork1.predict(TestSet))
 
 #=========== Second Try =========#
-myNetwork2 = Complete_Network([5,7,4,1])          #4 layers neural network (input and output are inclunded)
+myNetwork2 = Complete_Network([5,7,4,1])          # 4 layers neural network (input and output are included)
 myNetwork2.training(10000, trainingSet, outputSet)
 print("Network prediction 2 :")
 print(myNetwork2.predict(TestSet))
