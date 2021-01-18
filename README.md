@@ -10,7 +10,7 @@ I will try to update the program, two importants things are missing :
   - the network does not use biases
   - there is only the sigmoide as an activation function
 
-Feel free to use it. Tell me in what crazy project you are going to use it ! 
+Feel free to use it. Tell me in what crazy project you are going to use it or the updates you did ! 
 Bye !
 
 
