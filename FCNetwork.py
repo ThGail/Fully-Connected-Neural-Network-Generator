@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
     *** DESCRIPTION ***
     The following class generates a complete neural network, without biases.
     To initialize the network, we need to give the network's dimensions in an array (let L be this array and N be the number of layers) :
-        - for each i, natural number in [0, N], L[i] is the number of neurons that compose the layer i 
+        - for each i, natural number in [0, N-1], L[i] is the number of neurons that compose the layer i 
         - i = 0 is the input layer ; i = N is the output layer 
 '''
 
