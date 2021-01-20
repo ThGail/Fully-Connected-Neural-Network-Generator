@@ -27,7 +27,7 @@ class Complete_Network :
         return x*(1-x)
 
     def forward(self, x): 
-        #The next layer value is A*x (* the matrice multiplication) with A the layerWeights an x the layerValue
+        #The next layer value is A*x (* the matrice multiplication) with A the layerWeights and x the layerValue
         layerValue = [x]
         for w in self.layerWeights :
             x = self.activFunction(np.dot(w, x))
