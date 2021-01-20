@@ -84,7 +84,7 @@ class Complete_Network :
 #                            TEST PART
 #========================================================================#
 ''' For the example, let's suppose the following rules :
-        - the input is five dimensions vector, each coefficient is in {0,1}
+        - the input is a five dimensions vector, each coefficient is in {0,1}
         - the output is 1 if the two first coef are 1, else the output is 0 
 '''
 #-----------------------------------------------#
@@ -109,7 +109,7 @@ TestSet = np.array([    [1,0,1,1,1],
 
 
 #=========== First try =========#
-myNetwork1 = Complete_Network([5,10,1])           # 5 is the vector dimension, 1 is the output dimension, 10 is an arbitraty value : nb of neurons in the hidden layer
+myNetwork1 = Complete_Network([5,10,1])           # 5 is the input vector dimension, 1 is the output dimension, 10 is an arbitraty value : nb of neurons in the hidden layer
 myNetwork1.training(10000, trainingSet, outputSet)
 print("Network prediction 1 :")
 print(myNetwork1.predict(TestSet))
