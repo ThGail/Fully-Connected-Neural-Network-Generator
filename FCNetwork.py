@@ -19,13 +19,16 @@ class Complete_Network :
         self.ordCostGraph = []
         self.absCostGraph = []
 
+      
     def activFunction(self,x):
         return 1/(1+np.exp(-x))
 
+      
     def activFunctionPrime(self,x):
         #it is not really the derivative ... it is a bit rearranged 
         return x*(1-x)
 
+   
     def forward(self, x): 
         #The next layer value is A*x (* the matrice multiplication) with A the layerWeights and x the layerValue
         layerValue = [x]
@@ -35,9 +38,11 @@ class Complete_Network :
         
         return layerValue
 
+      
     def predict(self,x):
         return self.forward(x)[-1]
 
+      
     def BackPropagation(self, inputSet, outputSet):
         self.layersValue = self.forward(inputSet)
         self.layersErrorReversed = [outputSet - self.layersValue[-1]]
@@ -50,15 +55,8 @@ class Complete_Network :
 
         for w,d,v in zip(self.layerWeights, self.layersDelta[1:], self.layersValue[:-1]):
             w += np.dot(d, v.T)
-        
 
-    
-    def weightsCorrection(self):   
-        for w,d,v in zip(self.layerWeights, self.layersDelta[1:], self.layersValue[:-1]):
-            w += np.dot(d, v.T)
-
-
-
+            
     def training(self, nbTraining, inputSet, outputSet):
         #input has the dimension (a,b) : a is the nb input neurons, b is the nb of samples
         #output has the dimension (c,b) : c is the nb output neurons
@@ -79,6 +77,7 @@ class Complete_Network :
 
                 
 
+            
 
 #========================================================================#
 #                            TEST PART
