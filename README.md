@@ -7,7 +7,7 @@ A few explanations are also in the in the program, follow the #.
 
 I will update the program, two importants things still need to be implemented : 
   - the network does not use biases
-  - there is only the sigmoide as an activation function
+  - there is only the sigmoide as the activation function
 
 Feel free to use it. Tell me in what crazy project you would use it or the any update you would propose ! 
 Bye !
