@@ -120,3 +120,6 @@ print("Network prediction 2 :")
 print(myNetwork2.predict(TestSet))
 
 
+
+
+
